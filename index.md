@@ -1,21 +1,23 @@
 ---
-layout: scheduleStudent
+layout: base
 title: Home
-units: "1,2"
+#units: "1,2"
 description: Home Page
-#hide: true
+author: Yash Parikh
 image: /images/mario_animation.png
+hide: true
 ---
 
 <!-- Liquid:  statements -->
 
 <!-- Include submenu from _includes to top of pages -->
+{% include nav/home.html %}
 <!--- Concatenation of site URL to frontmatter image  --->
 {% assign sprite_file = site.baseurl | append: page.image %}
 <!--- Has is a list variable containing mario metadata for sprite --->
 {% assign hash = site.data.mario_metadata %}  
 <!--- Size width/height of Sprit images --->
-{% assign pixels = 256 %} 
+{% assign pixels = 256 %}
 
 <!--- HTML for page contains <p> tag named "Mario" and class properties for a "sprite"  -->
 
@@ -44,7 +46,7 @@ image: /images/mario_animation.png
 
 <!--- Embedded executable code--->
 <script>
-  ////////// convert yml hash to javascript key value objects /////////
+  ////////// convert YML hash to javascript key:value objects /////////
 
   var mario_metadata = {}; //key, value object
   {% for key in hash %}  
@@ -58,7 +60,7 @@ image: /images/mario_animation.png
 
   {% endfor %}
 
-  ////////// animation control object /////////
+  ////////// game object for player /////////
 
   class Mario {
     constructor(meta_data) {
@@ -97,19 +99,9 @@ image: /images/mario_animation.png
       this.animate(this.obj["Walk"], 3);
     }
 
-    NEWstartWalkingLeft() {
-      this.stopAnimate();
-      this.animate(this.obj["WalkL"], -3);
-    }
-
     startRunning() {
       this.stopAnimate();
       this.animate(this.obj["Run1"], 6);
-    }
-
-    NEWstartRunningLeft() {
-      this.stopAnimate();
-      this.animate(this.obj["Run1L"], -6);
     }
 
     startPuffing() {
@@ -142,7 +134,7 @@ image: /images/mario_animation.png
   ////////// event control /////////
 
   window.addEventListener("keydown", (event) => {
-    if (event.key === "ArrowRight"||event.key==="d") {
+    if (event.key === "ArrowRight") {
       event.preventDefault();
       if (event.repeat) {
         mario.startCheering();
@@ -151,33 +143,14 @@ image: /images/mario_animation.png
           mario.startWalking();
         } else if (mario.currentSpeed === 3) {
           mario.startRunning();
-        }  else if (mario.currentSpeed === -3) {
-          mario.startWalking();
-        } else if (mario.currentSpeed === -6) {
-          mario.startWalking();
         }
       }
-    } else if (event.key === "s" || event.key==="ArrowDown") {
+    } else if (event.key === "ArrowLeft") {
       event.preventDefault();
       if (event.repeat) {
         mario.stopAnimate();
       } else {
         mario.startPuffing();
-      }
-    } else if (event.key === "ArrowLeft" || event.key==="a") {
-      event.preventDefault();
-      if (event.repeat) {
-        mario.startCheering();
-      } else {
-        if (mario.currentSpeed === 0) {
-          mario.NEWstartWalkingLeft();
-        } else if (mario.currentSpeed === -3) {
-          mario.NEWstartRunningLeft();
-        } else if (mario.currentSpeed === 3) {
-          mario.NEWstartWalkingLeft();
-        } else if (mario.currentSpeed === 6) {
-          mario.NEWstartWalkingLeft();
-        }
       }
     }
   });
@@ -213,8 +186,8 @@ image: /images/mario_animation.png
     // adjust sprite size for high pixel density devices
     const scale = window.devicePixelRatio;
     const sprite = document.querySelector(".sprite");
-    sprite.style.transform = `scale(${0.5*scale})`;
-    sprite.style.zIndex = "2";
+    sprite.style.transform = `scale(${0.2 * scale})`;
     mario.startResting();
   });
+
 </script>
