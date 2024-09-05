@@ -1,17 +1,18 @@
 ---
 layout: base
 title: Home
-#units: "1,2"
+units: "1,2"
 description: Home Page
 author: Yash Parikh
 image: /images/mario_animation.png
 hide: true
 ---
 
+{% include scheduleStudent.html %}
+
 <!-- Liquid:  statements -->
 
-<!-- Include submenu from _includes to top of pages -->
-{% include nav/home.html %}
+<!-- Include submenu from _includes to top of pages {% include nav/home.html %} -->
 <!--- Concatenation of site URL to frontmatter image  --->
 {% assign sprite_file = site.baseurl | append: page.image %}
 <!--- Has is a list variable containing mario metadata for sprite --->
