@@ -6,6 +6,7 @@ description: Home Page
 author: Yash Parikh
 image: /images/mario_animation.png
 hide: true
+comments: true
 ---
 
 {% include scheduleStudent.html %}
