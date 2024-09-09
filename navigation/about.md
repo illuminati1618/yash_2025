@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
 
@@ -23,6 +23,15 @@ permalink: /about/
         margin: 5px 0; /* Add some margin for spacing */
     }
 </style>
+
+<h4 style="color: white;">
+I love playing and following both soccer and cricket! My favorite soccer team is Barcelona.
+</h4>
+
+<img src="{{site.baseurl}}/images/aboutme/sportsteams.jpg" height="150 px">
+
+<footer class="site-footer">
+</footer>
 
 <!-- This grid_container class is for the CSS styling, the id is for JavaScript connection -->
 <div class="grid-container" id="grid_container">
@@ -74,20 +83,23 @@ permalink: /about/
 
 Although my ancestry lies in India, my parents, who are from different parts of India, both moved to the United States for college. They met each other at UTA, and eventually moved to San Diego.
 
-One of my most major accomplishments has been captaining a team in middle school to win the CyberPatriot national finals.
+<footer class="site-footer">
+</footer>
+
 
 <h4 style="color: white;">
-I love playing and following both soccer and cricket! My favorite soccer team is Barcelona.
+One of my most major accomplishments has been captaining a team in middle school to win the CyberPatriot national finals.
 </h4>
 
-<img src="{{site.baseurl}}/images/aboutme/sportsteams.jpg" height="150 px">
+<img src="{{site.baseurl}}/images/teamphoto.png" height="150 px">
 
 <footer class="site-footer">
 </footer>
 
+
 <h4 style="color: white;">
 Outside of sports, I have played both the piano and the cello for almost 5 years each.
-</h4>
+
 
 <img src="{{site.baseurl}}/images/aboutme/piano&cello.jpg" height="150 px">
 
