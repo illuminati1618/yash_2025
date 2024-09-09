@@ -1,7 +1,8 @@
 ---
 layout: base
 title: Home
-units: "1,2"
+units: "1"
+course: compsci
 description: Home Page
 author: Yash Parikh
 image: /images/mario_animation.png
