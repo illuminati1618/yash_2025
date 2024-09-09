@@ -36,10 +36,9 @@ permalink: /about/
     // 2. Define a JavaScript object for our http source and our data rows for the Living in the World grid
     var http_source = "https://upload.wikimedia.org/wikipedia/commons/";
     var living_in_the_world = [
-        {"flag": "0/01/Flag_of_California.svg", "greeting": "Hey", "description": "California - forever"},
-        {"flag": "a/a4/Flag_of_the_United_States.svg", "greeting": "Hi", "description": "Oregon - 9 years"},
-        {"flag": "4/41/Flag_of_India.svg", "greeting": "Alright mate", "description": "England - 2 years"},
-        {"flag": "e/ef/Flag_of_Hawaii.svg", "greeting": "Aloha", "description": "Hawaii - 2 years"},
+        {"flag": "0/01/Flag_of_California.svg", "greeting": "Hey", "description": "Born in California"},
+        {"flag": "a/a4/Flag_of_the_United_States.svg", "greeting": "Hi", "description": "Will always live in the US"},
+        {"flag": "4/41/Flag_of_India.svg", "greeting": "Namaste", "description": "Cultural ties to India"},
     ]; 
     
     // 3a. Consider how to update style count for size of container
@@ -72,3 +71,35 @@ permalink: /about/
         container.appendChild(gridItem);
     }
 </script>
+
+Although my ancestry lies in India, my parents, who are from different parts of India, both moved to the United States for college. They met each other at UTA, and eventually moved to San Diego.
+
+One of my most major accomplishments has been captaining a team in middle school to win the CyberPatriot national finals.
+
+<h4 style="color: white;">
+I love playing and following both soccer and cricket! My favorite soccer team is Barcelona.
+</h4>
+
+<img src="{{site.baseurl}}/images/aboutme/sportsteams.jpg" height="150 px">
+
+<footer class="site-footer">
+</footer>
+
+<h4 style="color: white;">
+Outside of sports, I have played both the piano and the cello for almost 5 years each.
+</h4>
+
+<img src="{{site.baseurl}}/images/aboutme/piano&cello.jpg" height="150 px">
+
+<footer class="site-footer">
+</footer>
+
+<h4 style="color: white;">
+On a more fun side, I really enjoy listening to music and also playing video games! My favorite video game is Fortnite, which I play on my Xbox.
+</h4>
+
+<img src="{{site.baseurl}}/images/aboutme/fortniteandmusic.jpg" height="150 px">
+
+<br>
+<br>
+<br>
