@@ -91,7 +91,7 @@ Although my ancestry lies in India, my parents, who are from different parts of 
 One of my most major accomplishments has been captaining a team in middle school to win the CyberPatriot national finals.
 </h4>
 
-<img src="{{site.baseurl}}/images/teamphoto.png" height="150 px">
+<img src="{{site.baseurl}}/images/aboutme/teamphoto.png" height="150 px">
 
 <footer class="site-footer">
 </footer>
