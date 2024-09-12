@@ -10,6 +10,7 @@ hide: true
 comments: true
 ---
 
+{% include nav/home.html %}
 {% include scheduleStudent.html %}
 
 <!-- Liquid:  statements -->
