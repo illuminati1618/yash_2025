@@ -39,7 +39,14 @@ I love playing and following both soccer and cricket! My favorite soccer team is
     <!-- content will be added here by JavaScript -->
 </div>
 
-<script>
+<script src="https://utteranc.es/client.js"
+        repo="nighthawkcoders/portfolio_2025"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+
     // 1. Make a connection to the HTML container defined in the HTML div
     var container = document.getElementById("grid_container"); // This container connects to the HTML div
 
