@@ -84,7 +84,11 @@ function updateDisplay() {
 
 // Function for manual cookie clicks
 document.getElementById("cookieImage").addEventListener("click", () => {
-    cookies += cookiePerClick;
+    if (permanentFrenzyActive) {
+        cookies += cookiePerClick * 2; // Double the cookies during permanent frenzy
+    } else {
+        cookies += cookiePerClick;
+    }
     updateDisplay();
 });
 
