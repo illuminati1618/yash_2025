@@ -40,7 +40,7 @@ I love playing and following both soccer and cricket! My favorite soccer team is
 </div>
 
 <script src="https://utteranc.es/client.js"
-        repo="nighthawkcoders/portfolio_2025"
+        repo="illuminati1618/yash_2025"
         issue-term="title"
         label="blogpost-comment"
         theme="github-light"
