@@ -74,10 +74,11 @@ function updateDisplay() {
         document.getElementById("shop").style.display = "block";
     }
 
-    // Update oven button color if permanent frenzy is reached
+    // Update oven button if permanent frenzy is activated
     if (permanentFrenzyActive) {
-        document.getElementById("buyOven").style.color = "red";
         document.getElementById("buyOven").disabled = true; // Disable the button
+        document.getElementById("buyOven").style.setProperty('background-color', 'grey', 'important'); // Grey out button
+        document.getElementById("buyOven").style.setProperty('color', 'lightgrey', 'important'); // Change text color
     }
 }
 
