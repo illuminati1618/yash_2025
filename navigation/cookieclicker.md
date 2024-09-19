@@ -62,7 +62,7 @@ let permanentFrenzyActive = false; // Track if permanent frenzy is active
 
 // Shop items prices
 const ovenPrice = 200;
-const grandmaPrice = 15;
+const grandmaPrice = 25;
 const autoclickerPrice = 10;
 
 // Function to update the cookie display
