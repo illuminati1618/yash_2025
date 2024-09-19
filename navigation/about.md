@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: post
 title: About Me
 permalink: /about/
+comments: true
 ---
 
 <style>
