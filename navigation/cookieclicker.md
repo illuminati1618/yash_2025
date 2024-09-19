@@ -96,22 +96,30 @@ document.getElementById("cookieImage").addEventListener("click", () => {
 function updateOvenBar() {
     let ovenProgressBar = document.getElementById("ovenProgress");
 
+    // Show the oven bar container if an oven is purchased
     if (ovenPurchases >= 1) {
         document.getElementById("ovenBarContainer").style.display = "block"; // Show bar after first oven purchase
     }
 
+    // Permanent frenzy: oven bar is always full and red
     if (permanentFrenzyActive) {
         ovenProgressBar.style.width = "100%";
         ovenProgressBar.style.backgroundColor = "red"; // Bar stays red in permanent frenzy
-    } else if (ovenActive) {
+    } 
+    // Oven is active (frenzy)
+    else if (ovenActive) {
         let percentage = (ovenFrenzyRemaining / ovenDuration) * 100;
         ovenProgressBar.style.width = percentage + "%";
         ovenProgressBar.style.backgroundColor = "yellow"; // Yellow when oven is active
-    } else if (!ovenActive && ovenCooldownRemaining > 0) {
+    } 
+    // Oven cooldown
+    else if (!ovenActive && ovenCooldownRemaining > 0) {
         let percentage = ((ovenCooldownPeriod - ovenCooldownRemaining) / ovenCooldownPeriod) * 100;
         ovenProgressBar.style.width = percentage + "%";
         ovenProgressBar.style.backgroundColor = "blue"; // Blue when in cooldown
-    } else {
+    } 
+    // No frenzy or cooldown, reset the bar
+    else {
         ovenProgressBar.style.width = "0%";
     }
 }
