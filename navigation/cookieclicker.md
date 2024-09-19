@@ -1,6 +1,6 @@
---- 
+---
 layout: page 
-title: cookieclicker 
+title: Cookie Clicker 
 permalink: /cookieclicker/ 
 ---
 
@@ -50,7 +50,7 @@ let cookies = 0;
 let autoclickers = 0;
 let grandmas = 0;
 let cookiePerClick = 1;
-let baseCookiePerClick = 1; // New variable to store base cookie per click
+let baseCookiePerClick = 1; // Base cookie per click
 let ovenActive = false;
 let ovenCooldown = 0;
 let ovenDuration = 3000; // Oven frenzy duration (3 seconds)
@@ -60,7 +60,7 @@ let ovenFrenzyRemaining = 0; // Time remaining for the oven frenzy
 let ovenCooldownRemaining = 0; // Time remaining for the cooldown
 let permanentFrenzyActive = false; // Track if permanent frenzy is active
 
-// Shop items prices
+// Shop item prices
 const ovenPrice = 200;
 const grandmaPrice = 25;
 const autoclickerPrice = 10;
@@ -91,6 +91,7 @@ document.getElementById("cookieImage").addEventListener("click", () => {
     }
     updateDisplay();
 });
+
 
 // Function to update the oven bar (frenzy or cooldown)
 function updateOvenBar() {
@@ -150,31 +151,39 @@ function displayPermanentFrenzyMessage() {
 function gameLoop() {
     // Autoclickers: Increment cookies every 10 seconds (100ms * 100)
     if (autoclickers > 0) {
-        cookies += (autoclickers / 100);
+        if (permanentFrenzyActive) {
+            cookies += (autoclickers / 100) * 2; // Double cookies during permanent frenzy
+        } else {
+            cookies += (autoclickers / 100);
+        }
     }
 
     // Grandmas: Increment cookies every 5 seconds (100ms * 50)
     if (grandmas > 0) {
-        cookies += (grandmas / 50);
+        if (permanentFrenzyActive) {
+            cookies += (grandmas / 50) * 2; // Double cookies during permanent frenzy
+        } else {
+            cookies += (grandmas / 50);
+        }
     }
 
-    // Oven logic: Trigger frenzy mode based on cooldown
+    // Oven logic: Handle frenzy and cooldown
     if (ovenActive) {
         ovenFrenzyRemaining -= 100; // Reduce frenzy time remaining
         if (ovenFrenzyRemaining <= 0) {
             ovenActive = false;
             cookiePerClick = baseCookiePerClick; // Reset cookies per click to base value
-            document.getElementById("ovenStatus").style.display = "none"; // Hide frenzy status
             ovenCooldownRemaining = ovenCooldownPeriod; // Start the cooldown
         }
-    } else if (ovenCooldownRemaining > 0) {
-        ovenCooldownRemaining -= 100; // Reduce cooldown remaining
+    } 
+    // Reduce cooldown time
+    else if (ovenCooldownRemaining > 0) {
+        ovenCooldownRemaining -= 100;
     } else if (!ovenActive && ovenCooldownRemaining <= 0 && ovenPurchases > 0 && !permanentFrenzyActive) {
         // Activate oven frenzy
         ovenActive = true;
         ovenFrenzyRemaining = ovenDuration; // Set the oven frenzy time
         cookiePerClick = baseCookiePerClick * 2; // Double cookies per click
-        document.getElementById("ovenStatus").style.display = "block"; // Show frenzy status
     }
 
     // Update the progress bar
@@ -202,8 +211,12 @@ document.getElementById("buyOven").addEventListener("click", () => {
         ovenPurchases++;
         updateDisplay();
 
-        // Increase oven level display
-        document.getElementById("ovenLevel").innerHTML = ovenPurchases;
+        // Check if the oven level is at the maximum
+        if (ovenPurchases >= 12) {
+            document.getElementById("ovenLevel").innerHTML = "MAX"; // Display "MAX" when max level is reached
+        } else {
+            document.getElementById("ovenLevel").innerHTML = ovenPurchases; // Display current oven level
+        }
 
         // Reduce cooldown with each purchase, until it's a permanent frenzy
         if (ovenPurchases < 12) {
@@ -212,16 +225,14 @@ document.getElementById("buyOven").addEventListener("click", () => {
             permanentFrenzyActive = true; // Permanent frenzy
             ovenActive = true; // Set oven to be always active
             cookiePerClick = baseCookiePerClick * 2; // Permanent double cookies
-            document.getElementById("ovenStatus").style.display = "block"; // Show permanent frenzy status
-
-            // Change bar to red and show permanent frenzy message
-            updateOvenBar();
+            updateOvenBar(); // Ensure the bar stays red
             displayPermanentFrenzyMessage(); // Show fade-in message
         }
     } else {
         alert("Not enough cookies!");
     }
 });
+
 
 // Buy Grandma
 document.getElementById("buyGrandma").addEventListener("click", () => {
@@ -236,5 +247,4 @@ document.getElementById("buyGrandma").addEventListener("click", () => {
 
 // Start the game loop, running every 100 milliseconds (0.1 seconds)
 setInterval(gameLoop, 100);
-
 </script>
