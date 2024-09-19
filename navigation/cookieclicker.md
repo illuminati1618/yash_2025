@@ -22,8 +22,8 @@ Cookies: <span id="cookieDisplay">0</span>
 <div id="shop" style="display:none; margin-top:20px;">
     <h2>Shop</h2>
     <button id="buyAutoclicker">Buy Autoclicker (10 cookies)</button><br>
-    <button id="buyOven">Buy Oven (20 cookies)</button><br>
-    <button id="buyGrandma">Buy Grandma (15 cookies)</button>
+    <button id="buyGrandma">Buy Grandma (25 cookies)</button><br>
+    <button id="buyOven">Buy Oven (200 cookies)</button><br>
 </div>
 
 <!-- Oven status bar (initially hidden) -->
