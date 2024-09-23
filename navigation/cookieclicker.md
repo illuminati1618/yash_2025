@@ -1,7 +1,9 @@
 ---
-layout: page 
+layout: post 
 title: Cookie Clicker 
-permalink: /cookieclicker/ 
+type: tangibles
+courses: { compsci: {week: 0} }
+comments: true
 ---
 
 <h1>Welcome to Cookie Clicker!</h1>
