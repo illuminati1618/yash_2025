@@ -32,22 +32,32 @@ comments: true
       margin-top: 20px;
     }
     .play-again {
-    display: none;
-    margin-top: 20px;
-    padding: 20px 40px;
-    font-size: 1.5em;
-    cursor: pointer;
-    background-color: transparent; /* Initial transparent */
-    color: white;
-    border: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      display: none;
+      margin-top: 20px;
+      padding: 20px 40px;
+      font-size: 1.5em;
+      cursor: pointer;
+      background-color: transparent;
+      color: white;
+      border: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .game-mode {
+      margin-top: 20px;
+      font-size: 1.2em;
     }
   </style>
+
+  <!-- Game mode selection -->
+  <select class="game-mode">
+    <option value="human">Play Against Human</option>
+    <option value="computer">Play Against Computer</option>
+  </select>
 
   <div class="game-board">
     <div class="cell" data-index="0"></div>
@@ -68,9 +78,12 @@ comments: true
     const cells = document.querySelectorAll('.cell');
     const message = document.querySelector('.message');
     const playAgainButton = document.querySelector('.play-again');
+    const gameModeSelect = document.querySelector('.game-mode');
+    
     let currentPlayer = 'X';
     let board = Array(9).fill(null);
     let isGameActive = true;
+    let gameMode = gameModeSelect.value;
 
     const winningConditions = [
       [0, 1, 2],
@@ -115,8 +128,34 @@ comments: true
         playAgainButton.style.display = 'block';
       } else {
         currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+        if (gameMode === 'computer' && currentPlayer === 'O' && isGameActive) {
+          computerMove();
+        }
       }
     }
+
+    function computerMove() {
+    let availableCells = board.map((val, idx) => val === null ? idx : null).filter(val => val !== null);
+    
+    if (availableCells.length > 0) {
+        setTimeout(() => {
+        let randomIndex = availableCells[Math.floor(Math.random() * availableCells.length)];
+        board[randomIndex] = 'O';
+        cells[randomIndex].textContent = 'O';
+        cells[randomIndex].style.color = 'blue';
+
+        const winner = checkWinner();
+        if (winner) {
+            message.textContent = winner === 'Draw' ? "It's a draw!" : `${winner} wins!`;
+            isGameActive = false;
+            playAgainButton.style.display = 'block';
+        } else {
+            currentPlayer = 'X';
+        }
+        }, 1500);
+    }
+    }
+
 
     function resetGame() {
       board = Array(9).fill(null);
@@ -131,5 +170,11 @@ comments: true
     }
 
     cells.forEach(cell => cell.addEventListener('click', handleClick));
+    
     playAgainButton.addEventListener('click', resetGame);
+
+    gameModeSelect.addEventListener('change', function() {
+      gameMode = gameModeSelect.value;
+      resetGame();
+    });
   </script>
