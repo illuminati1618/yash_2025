@@ -92,6 +92,7 @@ $variable-color: #e06c75;              // Variables
 $constant-color: #d19a66;              // Constants (numbers, booleans)
 $type-color: #e5c07b;                  // Types (e.g., int, char)
 $punctuation-color: #abb2bf;           // Punctuation (brackets, commas, etc.)
+$ow-color: #56b6c2;
 
 code, pre {
   background-color: $background-color;
@@ -123,3 +124,4 @@ code, pre {
 .highlight .nn { color: $variable-color; }    // Class names
 .highlight .ni { color: $variable-color; }    // Class instance names
 .highlight .ne { color: $keyword-color; }     // Class definitions
+.highlight .ow { color: $ow-color; }     // Class definitions
