@@ -107,6 +107,16 @@ Sprint 2 Final Project and Culmination of Lessons
       > Manage collections of data
       </div>
   </a>
+
+  <a href="https://illuminati1618.github.io/yash_2025/navigation/sprite" class="box">
+      Javascript Self Study
+      <div class="dropdown-text">
+      > Display sprite through sprite sheet
+      <br>
+      > Interact with DOM through JS
+      </div>
+  </a>
+
 </div>
 
 {% include scheduleStudent.html %}
