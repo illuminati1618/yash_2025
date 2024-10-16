@@ -11,6 +11,104 @@ comments: true
 ---
 
 {% include nav/home.html %}
+
+<br>
+<a href="https://illuminati1618.github.io/yash_2025/2024/10/15/finalprojectsprint2_IPYNB_2_.html">
+Sprint 2 Final Project and Culmination of Lessons
+</a>
+
+<div class="grid-container">
+  <a href="https://illuminati1618.github.io/yash_2025/2024/10/05/3-1-and-4homework_IPYNB_2_.html" class="box">
+      Variables
+      <div class="dropdown-text">
+      > Store data values that can be changed
+      <br>
+      > Container to hold and manipulate information
+      </div>
+  </a>
+
+  <a href="https://nighthawkcoders.github.io/portfolio_2025/csp/big-idea/p2/3-2/" class="box">
+      Data Abstraction (Lesson Taught)
+      <div class="dropdown-text">
+      > Simplify complex data structures
+      <br>
+      > Make programs easy to understand
+      <br>
+      > Ensure correct use cases
+      </div>
+  </a>
+
+  <a href="https://illuminati1618.github.io/yash_2025/2024/10/09/3-3-and-5homework_IPYNB_2_.html" class="box">
+      Mathematical Expressions
+      <div class="dropdown-text">
+      > Operations involving numerical values
+      <br>
+      </div>
+  </a>
+
+  <a href="https://illuminati1618.github.io/yash_2025/2024/10/05/3-1-and-4homework_IPYNB_2_.html" class="box">
+      Strings
+      <div class="dropdown-text">
+      > Text values enclosed in quotes
+      <br>
+      > Text can be utilized
+      </div>
+  </a>
+
+  <a href="https://illuminati1618.github.io/yash_2025/2024/10/09/3-3-and-5homework_IPYNB_2_.html" class="box">
+      Boolean Expressions
+      <div class="dropdown-text">
+      > Logical statements
+      <br>
+      > Simplify down to true or false
+      <br>
+      > Basis of conditionals and decision making
+      </div>
+  </a>
+
+  <a href="https://illuminati1618.github.io/yash_2025/2024/10/04/3-6-and-7homework_IPYNB_2_.html" class="box">
+      Conditionals
+      <div class="dropdown-text">
+      > Allow program to complete action based on input
+      <br>
+      > Reduce user input
+      <br>
+      > Increase autonomy
+      </div>
+  </a>
+
+  <a href="https://illuminati1618.github.io/yash_2025/2024/10/04/3-6-and-7homework_IPYNB_2_.html" class="box">
+      Nested Conditionals
+      <div class="dropdown-text">
+      > Conditionals in conditionals
+      <br>
+      > Add complexity in decision-making process
+      <br>
+      > Edge-case simplification
+      </div>
+  </a>
+
+  <a href="https://illuminati1618.github.io/yash_2025/2024/10/04/3-8homework_IPYNB_2_.html" class="box">
+      Iteration
+      <div class="dropdown-text">
+      > Repeat code multiple times
+      <br>
+      > Perform repetitive tasks effectively
+      <br>
+      > Simplify code
+      </div>
+  </a>
+
+  <a href="https://illuminati1618.github.io/yash_2025/2024/10/04/3-10homework_IPYNB_2_.html" class="box">
+      List Operations
+      <div class="dropdown-text">
+      > Modifying list elements
+      <br>
+      > Manage collections of data
+      </div>
+  </a>
+</div>
+
 {% include scheduleStudent.html %}
 
 <!-- Liquid:  statements -->

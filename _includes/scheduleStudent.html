@@ -129,3 +129,9 @@ Load all posts with site
 
 </table>
 {% endfor %}
+{%- if page.comments -%}
+  {%- include utterances.html -%}
+{%- endif -%}
+{%- if site.disqus.shortname -%}
+  {%- include disqus_comments.html -%}
+{%- endif -%}
