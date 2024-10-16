@@ -125,3 +125,53 @@ code, pre {
 .highlight .ni { color: $variable-color; }    // Class instance names
 .highlight .ne { color: $keyword-color; }     // Class definitions
 .highlight .ow { color: $ow-color; }     // Class definitions
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 150px); /* Box width */
+    grid-template-rows: repeat(3, 150px);    /* Box height */
+    gap: 10px;                               /* Space between grid items */
+    justify-content: center;                  /* Center the grid items */
+}
+
+.box {
+    background-color: #000000;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    overflow: visible; /* Allow drop-down to be visible outside the box */
+    border-radius: 10px;
+}
+
+.box:hover {
+    background-color: #d33103;
+    color: rgb(255, 255, 255);
+    text-decoration-color: #1e6bb8;
+}
+
+.dropdown-text {
+    position: absolute;
+    top: 100%; /* Positioned directly below the box */
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    font-size: 14px;
+    z-index: 1; /* Added to ensure it appears in front */
+    text-align: left;
+}
+
+.box:hover .dropdown-text {
+    opacity: 1;
+    visibility: visible; /* Show text on hover */
+}
