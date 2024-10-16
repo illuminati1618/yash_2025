@@ -1,0 +1,123 @@
+---
+layout: page
+title: Javascript Sprite Work
+description: Yash's Self-Study Javascript Lesson
+---
+
+<style>
+    #gameCanvasUnique {
+        border: 4px solid rgb(4, 102, 33); /* Green border for the canvas */
+    }
+</style>
+
+<canvas id="gameCanvasUnique" width="1280" height="1280"></canvas>
+
+<script>
+// Outer function is required by Jupyter Notebook to avoid conflicts
+function defineAndDrawSprite() {
+
+    /**
+     * Function to define the sprite metadata for Tux the penguin
+     * @returns {Object} spriteMetaData - The metadata for the Tux sprite
+     */
+
+    /**
+     * Function to define the sprite metadata for Tux the penguin
+     * @returns {Object} spriteMetaData - The metadata for the Tux sprite
+     */
+     function MarioSpriteMetaData() {
+        // NPC sprite data (Tux the penguin)
+        const isLocal =  window.location.protocol === 'vscode-webview:' | false;
+        const baseUrl = isLocal ? '.' : '/yash_2025';
+        const spriteMetaData = {
+            name: 'mario',
+            src: `${baseUrl}/images/knight.png`,
+            orientation: {
+                rows: 8,
+                columns: 24,
+            },
+            scale: {
+                x: 1.00,
+                y: 1.00  
+            }
+        };
+
+        return spriteMetaData;
+    }
+
+
+    /**
+     * Class to handle the canvas data and drawing of the sprite
+     */
+    class CanvasData {
+        constructor(spriteMetaData) {
+            this.spriteMetaData = spriteMetaData;
+            this.INIT_POSITION = { x: 0, y: 0 };
+            this.canvas = document.getElementById('gameCanvasUnique');
+            this.ctx = this.canvas.getContext('2d');
+            this.spriteImage = new Image();
+            this.spriteImage.src = spriteMetaData.src;
+            this.spriteImage.onload = () => this.draw(); // Ensure draw is called after image is loaded
+        }
+
+        // Method to draw each sprite individually
+        draw() {
+            // This is the size of the sprite file, calculated from the PNG file 
+            this.ctx.filter = 'invert(100%)';
+            const sheetWidth = this.spriteImage.width; 
+            const sheetHeight = this.spriteImage.height;
+            // This meta data describes the sprite sheet
+            const rows = this.spriteMetaData.orientation.rows;
+            const cols = this.spriteMetaData.orientation.columns;
+            const jagged = this.spriteMetaData.orientation.jagged || null;
+            const header = this.spriteMetaData.orientation.header || 0;
+            const pad = this.spriteMetaData.orientation.pad || 0;
+            // This is the initial output position on the canvas
+            const x = this.INIT_POSITION.x;
+            const y = this.INIT_POSITION.y;
+
+            // Calculate the dimensions of each individual sprite
+            const spriteWidth = sheetWidth / cols;
+            const spriteHeight = (sheetHeight - header * rows) / rows;
+
+            console.log(`Sprite Sheet Dimensions: ${sheetWidth}x${sheetHeight}`);
+            console.log(`Individual Sprite Dimensions: ${spriteWidth}x${spriteHeight}`);
+            console.log(`Rows: ${rows}, Columns: ${cols}`);
+
+            // Nested for loop to draw 2-dimensional sprite sheet
+            for (let row = 0; row < rows; row++) {
+                const columnsInRow = jagged ? jagged[row] || cols : cols;
+                for (let col = 0; col < columnsInRow; col++) {
+                    // Calculate the source coordinates and dimensions
+                    const srcX = col * spriteWidth + (pad * col);
+                    const srcY = row * (spriteHeight + header) - (pad * row);
+                    const srcWidth = spriteWidth - (pad * 4) - (col + pad); // Subtract 8 pixels (4 from each side)
+                    const srcHeight = spriteHeight - (pad * 2); // Subtract 8 pixels (4 from each side)
+
+                    // Calculate the destination coordinates and dimensions
+                    const destX = x + col * spriteWidth * this.spriteMetaData.scale.x;
+                    const destY = y + row * spriteHeight * this.spriteMetaData.scale.y;
+                    const destWidth = spriteWidth * this.spriteMetaData.scale.x;
+                    const destHeight = spriteHeight * this.spriteMetaData.scale.y;
+
+                    console.log(`Drawing row: ${row}, column: ${col}`);
+                    console.log(`Source: (${srcX}, ${srcY}, ${spriteWidth}, ${spriteHeight})`);
+                    console.log(`Destination: (${destX}, ${destY}, ${destWidth}, ${destHeight})`);
+
+                    this.ctx.drawImage(
+                        this.spriteImage,
+                        srcX, srcY + header, srcWidth, srcHeight, // Source rectangle
+                        destX, destY, destWidth, destHeight // Destination rectangle
+                    );
+                }
+            }
+        }
+    }
+
+    // Setup to Tux sprite
+    //const tux = new CanvasData(TuxSpriteMetaData());
+    const mario = new CanvasData(MarioSpriteMetaData());
+}
+
+defineAndDrawSprite();
+</script>
