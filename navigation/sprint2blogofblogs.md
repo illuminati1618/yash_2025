@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Snake
-description: snake game
+title: Blog of Blogs
+description: Sprint 2 Group 3.2 blog of blogs
 ---
 
 | Neil     | Yash                                                | Nikhil   | Rohan    |
