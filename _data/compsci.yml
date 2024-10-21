@@ -1,11 +1,11 @@
-Sprint1:
-  title: Computer Science and Software Engineering 1
-  description: Install Tools. Design lab notebook. Learn GitHub Pages. Work with Pair (pair name).
-  start: 0
-  end: 12
+Sprint 1:
+  title: "Sprint 1"
+  description: "test1."
+  start: 1
+  end: 3
 
-#Sprint2:
-#  title: Computer Science and Software Engineering 2
-#  description: Learn (JavaScript|Python|Java). Start Agile development process.
-#  start: 13
-#  end: 24
+Sprint 2:
+  title: "Sprint2"
+  description: "test2."
+  start: 4
+  end: 6
