@@ -1,11 +1,11 @@
 Sprint 1:
-  title: "Sprint 1"
-  description: "test1."
+  title: "Initial Startup"
+  description: "Starting off with tools setup and understanding jupyter"
   start: 1
-  end: 3
+  end: 4
 
 Sprint 2:
-  title: "Sprint2"
-  description: "test2."
-  start: 4
-  end: 6
+  title: "Team Teach"
+  description: "Creating and participating in lessons"
+  start: 5
+  end: 8
