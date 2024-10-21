@@ -1,8 +1,9 @@
 ---
 layout: post 
 title: Tic Tac Toe 
+course: "compsci"
+week: 4
 type: tangibles
-courses: { compsci: {week: 0} }
 comments: true
 ---
 

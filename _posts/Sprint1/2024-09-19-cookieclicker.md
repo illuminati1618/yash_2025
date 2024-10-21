@@ -2,7 +2,9 @@
 layout: post 
 title: Cookie Clicker 
 type: tangibles
-courses: { compsci: {week: 0} }
+course: "compsci"
+week: 3
+type: tangibles
 comments: true
 ---
 

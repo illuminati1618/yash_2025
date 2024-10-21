@@ -2,6 +2,9 @@
 layout: page
 title: Blog of Blogs
 description: Sprint 2 Group 3.2 blog of blogs
+course: "compsci"
+week: 5
+type: plans
 ---
 
 | Neil     | Yash                                                | Nikhil   | Rohan    |
