@@ -108,7 +108,7 @@ Sprint 2 Final Project and Culmination of Lessons
       </div>
   </a>
 
-  <a href="https://illuminati1618.github.io/yash_2025/navigation/sprite" class="box">
+  <a href="https://illuminati1618.github.io/yash_2025/2024/10/19/sprite.html" class="box">
       Javascript Self Study
       <div class="dropdown-text">
       > Display sprite through sprite sheet
