@@ -5,6 +5,7 @@ description: Thorough corrections on all of the questions I missed to improve my
 course: "compsci"
 week: 13
 type: tangibles
+comments: true
 ---
 
 | **Number** | **Name**                                    | **Topic** | **Skills** |
