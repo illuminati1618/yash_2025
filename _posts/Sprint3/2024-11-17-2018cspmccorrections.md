@@ -72,3 +72,54 @@ Option D: "Open standards and protocols prevent developers from releasing softwa
 **Option D:**  
 - Incorrect because the algorithm is exact, not approximate.
 
+# Q50
+![Q50.png]({{site.baseurl}}/images/Sprint3/2018mccorrections/q50.png)
+
+*Why Option B is Correct:*
+- Performs a linear search, meaning it compares each element of the list with the intended target value
+
+*Why the Other Options Are Incorrect:*
+
+**Option A:**  
+- Doesn't implement a binary search
+
+**Option C:**  
+- Doesn't implement a binary search and doesn't require the list to be sorted
+
+**Option D:**  
+- Doesn't require the list to be sorted
+
+# Q54
+![Q54.png]({{site.baseurl}}/images/Sprint3/2018mccorrections/q54.png)
+
+*Why Option D is Correct:*
+- The generalization is correct of power n to the m, because the same effect can be seen in square and cube
+
+*Why the Other Options Are Incorrect:*
+
+**Option A:**  
+- "Add" doesn't generalize Square and Cube procedures
+
+**Option B:**  
+- Fourth procedure doesn't generalize the calculation of the ability to calculate any power of n
+
+**Option C:**  
+- Although the Polynomial procedure properly adds Square and Cube, doesn't generalize any power of n
+
+# Q58
+![Q58.png]({{site.baseurl}}/images/Sprint3/2018mccorrections/q58.png)
+
+*Why Option A is Correct:*
+- The internet does indeed provide tools, information, and professional knowledge to participants of crowdsourcing, and does provide a better reach to those with geographic barriers. However, the internet may not always solve problems with reasonable time.
+
+# Q65
+![Q65.png]({{site.baseurl}}/images/Sprint3/2018mccorrections/q65.png)
+
+*Why Option B and D are Correct:*
+- If Y is negative, then the condition will never be met of count = y because count = 0 is reset every time.
+
+*Why the Other Options Are Incorrect:*
+
+- If both x and y are positive, the procedure will proceed correctly by adding x y times to itself.
+
+Overall, this multiple choice quiz took me an hour and 27 minutes, and I feel that it was a successful first attempt! I will make my best effort to continue improving my score and also understanding the content better.
