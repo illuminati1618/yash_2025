@@ -4,7 +4,7 @@ title: MC 2018 Corrections
 description: Thorough corrections on all of the questions I missed to improve my learning overall.
 course: "compsci"
 week: 13
-type: tangibles
+type: hacks
 comments: true
 ---
 
@@ -123,3 +123,6 @@ Option D: "Open standards and protocols prevent developers from releasing softwa
 - If both x and y are positive, the procedure will proceed correctly by adding x y times to itself.
 
 Overall, this multiple choice quiz took me an hour and 27 minutes, and I feel that it was a successful first attempt! I will make my best effort to continue improving my score and also understanding the content better.
+
+One category of skills I need to improve on is skill 1, which is, "Design and evaluate computational solutions for a purpose."
+One category of topics I need to improve on is topic 3, which is, "Algorithms & Programming Fundamentals"
