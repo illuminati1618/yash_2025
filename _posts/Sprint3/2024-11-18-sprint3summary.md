@@ -9,6 +9,9 @@ type: tangibles
 
 Something great I did in Sprint 3 was my involvement in being one of the first groups to get the **backend working successfully.**
 
+# Helping my group members grasp the vision:
+![dbstructure.png]({{site.baseurl}}/images/Sprint3/drawioflockerrealityroom.png)
+
 # Backend Development
 
 To get started with backend, I wanted to be involved in helping Mr. Mortensen actually work on the database. That's why one of the first things I started with was trying to create the "channels" table in the database. I actually got this flow working at one point!
