@@ -6,8 +6,8 @@ week: 13
 type: plans
 ---
 
-| **Trio 1**                    |       |  | **Trio 2**       |        |
-|-------------------------------|-------|--|------------------|--------|
-| **Scrum Master**              | Yash  |  | **Assistant SM** | Anvay  |
-| Integrator + Dev 1 (Frontend) | Manas |  | Dev 3            | Pranav |
-| Dev 2 (Frontend)              | Adi   |  | Dev 4 (Backend)  | Mihir  |
+| **Trio 1**         |       |  | **Trio 2**       |        |
+|--------------------|-------|--|------------------|--------|
+| **Scrum Master**   | Yash  |  | **Assistant SM** | Anvay  |
+| Integrator + Dev 1 | Manas |  | Dev 3            | Pranav |
+| Dev 2              | Adi   |  | Dev 4            | Mihir  |
