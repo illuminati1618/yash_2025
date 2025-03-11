@@ -30,7 +30,13 @@ def put(self):
 
     formatted_new_interests = re.sub(r'\s*,\s*', ', ', new_interests.strip())
     current_interests = user.interests.split(', ') if user.interests else []
-    combined_interests = list(set(current_interests + formatted_new_interests.split(', ')))
+    new_interests_list = formatted_new_interests.split(', ')
+    
+    combined_interests = current_interests.copy()
+    for interest in new_interests_list:
+        if interest not in combined_interests:
+            combined_interests.append(interest)
+    
     user.interests = ', '.join(combined_interests)
     user.update({'interests': user.interests})
     return jsonify(user.interests)
