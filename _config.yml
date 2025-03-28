@@ -12,6 +12,11 @@ minima:
     - { platform: github, user_url: "https://github.com/illuminati1618"}
     - { platform: linkedin, user_url: "https://www.linkedin.com/in/yash-parikh-3a238730a/" }
     - { platform: youtube, user_url: "https://www.youtube.com/@yashparikh1618" } 
+  nav_pages:
+  - navigation/blog.md
+  - navigation/search.md
+  - navigation/about.md
+  - README4YML.md
 # remote_theme: pages-themes/midnight@v0.2.0
 # remote_theme: pages-themes/cayman@v0.2.0
 # remote_theme: pages-themes/dinky@v0.2.0
@@ -19,8 +24,4 @@ minima:
 # remote_theme: pages-themes/time-machine@v0.2.0
 plugins:
   - jekyll-remote-theme
-header_pages:
-  - navigation/blog.md
-  - navigation/search.md
-  - navigation/about.md
-  - README4YML.md
+
