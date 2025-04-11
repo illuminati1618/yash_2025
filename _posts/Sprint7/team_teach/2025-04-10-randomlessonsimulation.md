@@ -249,7 +249,7 @@ permalink: /csp/randomlessonsimulation
                 <select id="distribution">
                     <option value="uniform">Uniform (Equal Probability)</option>
                     <option value="gaussian">Gaussian (Normal Distribution)</option>
-                    <option value="weighted">Weighted (Higher Values More Likely)</option>
+                    <option value="weighted">Weighted (Lower Values More Likely)</option>
                 </select>
             </div>
             <div class="form-group">
