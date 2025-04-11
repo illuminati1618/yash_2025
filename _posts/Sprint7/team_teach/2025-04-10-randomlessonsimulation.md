@@ -10,7 +10,6 @@ permalink: /csp/randomlessonsimulation
     :root {
         --primary-color: #3498db !important;
         --secondary-color: #2ecc71 !important;
-        --background-color: #f5f7fa !important;
         --card-color: #ffffff !important;
         --text-color: #333333 !important;
         --shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
