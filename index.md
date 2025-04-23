@@ -25,7 +25,7 @@ Sprint 2 Final Project and Culmination of Lessons
 
 <div class="grid-container">
   <a href="https://illuminati1618.github.io/yash_2025/2024/10/05/3-1-and-4homework_IPYNB_2_.html" class="box">
-      Variables
+      Variables (3.1)
       <div class="dropdown-text">
       > Store data values that can be changed
       <br>
@@ -34,7 +34,7 @@ Sprint 2 Final Project and Culmination of Lessons
   </a>
 
   <a href="https://nighthawkcoders.github.io/portfolio_2025/csp/big-idea/p2/3-2/" class="box">
-      Data Abstraction (Lesson Taught)
+      Data Abstraction (3.2)
       <div class="dropdown-text">
       > Simplify complex data structures
       <br>
@@ -45,7 +45,7 @@ Sprint 2 Final Project and Culmination of Lessons
   </a>
 
   <a href="https://illuminati1618.github.io/yash_2025/2024/10/09/3-3-and-5homework_IPYNB_2_.html" class="box">
-      Mathematical Expressions
+      Mathematical Expressions (3.3)
       <div class="dropdown-text">
       > Operations involving numerical values
       <br>
@@ -53,7 +53,7 @@ Sprint 2 Final Project and Culmination of Lessons
   </a>
 
   <a href="https://illuminati1618.github.io/yash_2025/2024/10/05/3-1-and-4homework_IPYNB_2_.html" class="box">
-      Strings
+      Strings (3.4)
       <div class="dropdown-text">
       > Text values enclosed in quotes
       <br>
@@ -62,7 +62,7 @@ Sprint 2 Final Project and Culmination of Lessons
   </a>
 
   <a href="https://illuminati1618.github.io/yash_2025/2024/10/09/3-3-and-5homework_IPYNB_2_.html" class="box">
-      Boolean Expressions
+      Boolean Expressions (3.5)
       <div class="dropdown-text">
       > Logical statements
       <br>
@@ -73,7 +73,7 @@ Sprint 2 Final Project and Culmination of Lessons
   </a>
 
   <a href="https://illuminati1618.github.io/yash_2025/2024/10/04/3-6-and-7homework_IPYNB_2_.html" class="box">
-      Conditionals
+      Conditionals (3.6)
       <div class="dropdown-text">
       > Allow program to complete action based on input
       <br>
@@ -84,7 +84,7 @@ Sprint 2 Final Project and Culmination of Lessons
   </a>
 
   <a href="https://illuminati1618.github.io/yash_2025/2024/10/04/3-6-and-7homework_IPYNB_2_.html" class="box">
-      Nested Conditionals
+      Nested Conditionals (3.7)
       <div class="dropdown-text">
       > Conditionals in conditionals
       <br>
@@ -95,7 +95,7 @@ Sprint 2 Final Project and Culmination of Lessons
   </a>
 
   <a href="https://illuminati1618.github.io/yash_2025/2024/10/04/3-8homework_IPYNB_2_.html" class="box">
-      Iteration
+      Iteration (3.8)
       <div class="dropdown-text">
       > Repeat code multiple times
       <br>
@@ -105,8 +105,8 @@ Sprint 2 Final Project and Culmination of Lessons
       </div>
   </a>
 
-  <a href="https://illuminati1618.github.io/yash_2025/2024/10/04/3-10homework_IPYNB_2_.html" class="box">
-      List Operations
+  <a href="https://illuminati1618.github.io/yash_2025/2024/10/10/3-10homework_IPYNB_2_.html" class="box">
+      List Operations (3.10)
       <div class="dropdown-text">
       > Modifying list elements
       <br>
@@ -115,7 +115,7 @@ Sprint 2 Final Project and Culmination of Lessons
   </a>
 
   <a href="https://illuminati1618.github.io/yash_2025/2024/10/19/sprite.html" class="box">
-      Javascript Self Study
+      Javascript Self Study (3.15)
       <div class="dropdown-text">
       > Display sprite through sprite sheet
       <br>
@@ -136,7 +136,7 @@ Sprint 2 Final Project and Culmination of Lessons
 <!-- New CSP Topics Grid -->
 <div class="grid-container">
   <a href="https://illuminati1618.github.io/yash_2025/2025/03/20/Day1-BeneficialHarmfulEffects_IPYNB_2_.html" class="box">
-      Beneficial & Harmful Effects
+      Beneficial & Harmful Effects (5.1)
       <div class="dropdown-text">
       > Computing innovations impact society
       <br>
@@ -147,7 +147,7 @@ Sprint 2 Final Project and Culmination of Lessons
   </a>
 
   <a href="https://illuminati1618.github.io/yash_2025/2025/03/21/Day2-DigitalDivide_IPYNB_2_.html" class="box">
-      Digital Divide
+      Digital Divide (5.2)
       <div class="dropdown-text">
       > Unequal access to technology
       <br>
@@ -158,7 +158,7 @@ Sprint 2 Final Project and Culmination of Lessons
   </a>
 
   <a href="https://illuminati1618.github.io/yash_2025/2025/03/24/Day3-ComputingBias_IPYNB_2_.html" class="box">
-      Computing Bias
+      Computing Bias (5.3)
       <div class="dropdown-text">
       > Bias in algorithm development
       <br>
@@ -169,7 +169,7 @@ Sprint 2 Final Project and Culmination of Lessons
   </a>
 
   <a href="https://illuminati1618.github.io/yash_2025/2025/03/25/Day4-Crowdsourcing_IPYNB_2_.html" class="box">
-      Crowdsourcing
+      Crowdsourcing (5.4)
       <div class="dropdown-text">
       > Leveraging collective intelligence
       <br>
@@ -180,7 +180,7 @@ Sprint 2 Final Project and Culmination of Lessons
   </a>
 
   <a href="https://illuminati1618.github.io/yash_2025/2025/03/31/Day5-LegalEthical_IPYNB_2_.html" class="box">
-      Legal & Ethical Concerns
+      Legal & Ethical Concerns (5.5)
       <div class="dropdown-text">
       > Intellectual property rights
       <br>
@@ -191,7 +191,7 @@ Sprint 2 Final Project and Culmination of Lessons
   </a>
 
   <a href="https://illuminati1618.github.io/yash_2025/2025/03/20/Day6-BinarySearch_IPYNB_2_.html" class="box">
-      Binary Search
+      Binary Search (3.11)
       <div class="dropdown-text">
       > Efficient searching algorithm
       <br>
@@ -202,7 +202,7 @@ Sprint 2 Final Project and Culmination of Lessons
   </a>
 
   <a href="https://illuminati1618.github.io/yash_2025/2025/03/20/Day6-SafeComputing_IPYNB_2_.html" class="box">
-      Safe Computing
+      Safe Computing (5.6)
       <div class="dropdown-text">
       > Cybersecurity principles
       <br>
@@ -213,7 +213,7 @@ Sprint 2 Final Project and Culmination of Lessons
   </a>
 
   <a href="https://illuminati1618.github.io/yash_2025/2025/05/08/Day7-ListsFiltering_IPYNB_2_.html" class="box">
-      Lists & Filtering
+      Lists & Filtering (3.10)
       <div class="dropdown-text">
       > Data structure manipulation
       <br>
@@ -224,7 +224,7 @@ Sprint 2 Final Project and Culmination of Lessons
   </a>
 
   <a href="https://illuminati1618.github.io/yash_2025/big-o2" class="box">
-      Algorithmic Efficiency
+      Algorithmic Efficiency (3.17)
       <div class="dropdown-text">
       > Big O notation analysis
       <br>
@@ -235,7 +235,7 @@ Sprint 2 Final Project and Culmination of Lessons
   </a>
 
   <a href="https://illuminati1618.github.io/yash_2025/csp/random/" class="box">
-      Randomness & Simulations
+      Randomness & Simulations (3.15)
       <div class="dropdown-text">
       > Random number generation
       <br>
