@@ -119,6 +119,120 @@ Sprint 2 Final Project and Culmination of Lessons
 
 </div>
 
+
+<!-- New CSP Topics Grid -->
+<div class="grid-container">
+  <a href="https://illuminati1618.github.io/yash_2025/2025/03/20/Day1-BeneficialHarmfulEffects_IPYNB_2_.html" class="box">
+      Beneficial & Harmful Effects
+      <div class="dropdown-text">
+      > Computing innovations impact society
+      <br>
+      > Effects can be both beneficial and harmful
+      <br>
+      > Unintended consequences can occur
+      </div>
+  </a>
+
+  <a href="https://illuminati1618.github.io/yash_2025/2025/03/21/Day2-DigitalDivide_IPYNB_2_.html" class="box">
+      Digital Divide
+      <div class="dropdown-text">
+      > Unequal access to technology
+      <br>
+      > Socioeconomic, geographic & demographic factors
+      <br>
+      > Impact on education and opportunities
+      </div>
+  </a>
+
+  <a href="https://illuminati1618.github.io/yash_2025/2025/03/24/Day3-ComputingBias_IPYNB_2_.html" class="box">
+      Computing Bias
+      <div class="dropdown-text">
+      > Bias in algorithm development
+      <br>
+      > Influence on data interpretation
+      <br>
+      > Social implications of biased systems
+      </div>
+  </a>
+
+  <a href="https://illuminati1618.github.io/yash_2025/2025/03/25/Day4-Crowdsourcing_IPYNB_2_.html" class="box">
+      Crowdsourcing
+      <div class="dropdown-text">
+      > Leveraging collective intelligence
+      <br>
+      > Distributed problem-solving
+      <br>
+      > Collaborative data collection
+      </div>
+  </a>
+
+  <a href="https://illuminati1618.github.io/yash_2025/2025/03/31/Day5-LegalEthical_IPYNB_2_.html" class="box">
+      Legal & Ethical Concerns
+      <div class="dropdown-text">
+      > Intellectual property rights
+      <br>
+      > Privacy in digital environments
+      <br>
+      > Ethical use of technology
+      </div>
+  </a>
+
+  <a href="https://illuminati1618.github.io/yash_2025/2025/03/20/Day6-BinarySearch_IPYNB_2_.html" class="box">
+      Binary Search
+      <div class="dropdown-text">
+      > Efficient searching algorithm
+      <br>
+      > Requires sorted data
+      <br>
+      > Divide and conquer approach
+      </div>
+  </a>
+
+  <a href="https://illuminati1618.github.io/yash_2025/2025/03/20/Day6-SafeComputing_IPYNB_2_.html" class="box">
+      Safe Computing
+      <div class="dropdown-text">
+      > Cybersecurity principles
+      <br>
+      > Protecting personal data
+      <br>
+      > Threat mitigation strategies
+      </div>
+  </a>
+
+  <a href="https://illuminati1618.github.io/yash_2025/2025/05/08/Day7-ListsFiltering_IPYNB_2_.html" class="box">
+      Lists & Filtering
+      <div class="dropdown-text">
+      > Data structure manipulation
+      <br>
+      > Filter operations on collections
+      <br>
+      > Processing data efficiently
+      </div>
+  </a>
+
+  <a href="https://illuminati1618.github.io/yash_2025/big-o2" class="box">
+      Algorithmic Efficiency
+      <div class="dropdown-text">
+      > Big O notation analysis
+      <br>
+      > Time and space complexity
+      <br>
+      > Algorithm performance evaluation
+      </div>
+  </a>
+
+  <a href="https://illuminati1618.github.io/yash_2025/csp/random/" class="box">
+      Randomness & Simulations
+      <div class="dropdown-text">
+      > Random number generation
+      <br>
+      > Game theory applications
+      <br>
+      > Modeling probabilistic scenarios
+      </div>
+  </a>
+</div>
+
 {% include scheduleStudent.html %}
 
 <!-- Liquid:  statements -->
