@@ -13,6 +13,12 @@ comments: true
 {% include nav/home.html %}
 
 <br>
+
+<br>
+
+## AP CSP Tri 1
+
+<br>
 <a href="https://illuminati1618.github.io/yash_2025/2024/10/15/finalprojectsprint2_IPYNB_2_.html">
 Sprint 2 Final Project and Culmination of Lessons
 </a>
@@ -119,6 +125,13 @@ Sprint 2 Final Project and Culmination of Lessons
 
 </div>
 
+<br>
+
+<br>
+
+<br>
+
+## AP CSP Tri 3
 
 <!-- New CSP Topics Grid -->
 <div class="grid-container">
